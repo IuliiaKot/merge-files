@@ -4,7 +4,7 @@ const LogSource = require('./lib/log-source')
 const Printer = require('./lib/printer')
 
 // You can adjust this variable to see how your solutions perform under various "load"
-const sourceCount = 50
+const sourceCount = 2
 
 /**
  * Challenge Number 1!
@@ -45,4 +45,4 @@ const asyncLogSources = []
 for (let i = 0; i < sourceCount; i++) {
 	asyncLogSources.push(new LogSource())
 }
-// require('./solution/async-sorted-merge')(asyncLogSources, new Printer())
+require('./solution/async-sorted-merge')(asyncLogSources, new Printer())
